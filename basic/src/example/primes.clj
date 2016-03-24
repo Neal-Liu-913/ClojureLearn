@@ -1,4 +1,4 @@
-(ns example.primes)
+(ns src.example.primes)
 (def primes
   (concat
     [2 3 5 7]
@@ -13,3 +13,4 @@
                           6 4 6 8 4 2 4 2 4 8 6 4 6 2 4 6
                           2 6 6 4 2 4 6 2 6 4 2 4 2 10 2 10])]
         (primes-from 11 wheel)))))
+(def ordinals-and-primes (map vector (iterate inc 1) primes))
